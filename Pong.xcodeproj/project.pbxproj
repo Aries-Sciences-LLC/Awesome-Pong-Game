@@ -3,12 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C2FE7E0222E133C0013F59F /* MultiMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FE7DF222E133C0013F59F /* MultiMenuVC.swift */; };
-		0C2FE7E2222E16050013F59F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FE7E1222E16050013F59F /* MainViewController.swift */; };
 		0C4374631E743EFE0035B586 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4374621E743EFE0035B586 /* AppDelegate.swift */; };
 		0C4374651E743EFE0035B586 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0C4374641E743EFE0035B586 /* GameScene.sks */; };
 		0C4374671E743EFE0035B586 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0C4374661E743EFE0035B586 /* Actions.sks */; };
@@ -18,13 +16,59 @@
 		0C4374701E743EFE0035B586 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C43746F1E743EFE0035B586 /* Assets.xcassets */; };
 		0C4374731E743EFE0035B586 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C4374711E743EFE0035B586 /* LaunchScreen.storyboard */; };
 		0C43747B1E7441F90035B586 /* LLPIXEL3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0C43747A1E7441F90035B586 /* LLPIXEL3.ttf */; };
-		0C43747D1E7442020035B586 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C43747C1E7442020035B586 /* MenuVC.swift */; };
-		F76642312230982800CD8009 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76642302230982700CD8009 /* LoadingView.swift */; };
+		F717F47B259ABCE000D1508A /* SinglePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717F47A259ABCE000D1508A /* SinglePlayerViewController.swift */; };
+		F717F47E259ABCEC00D1508A /* MultiplayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717F47D259ABCEC00D1508A /* MultiplayerViewController.swift */; };
+		F717F4F1259C082F00D1508A /* FloatingTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717F4F0259C082F00D1508A /* FloatingTabBar.swift */; };
+		F717F4F4259C086000D1508A /* FloatingTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717F4F3259C086000D1508A /* FloatingTabBarController.swift */; };
+		F717F4F7259C087C00D1508A /* FloatingTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717F4F6259C087C00D1508A /* FloatingTabItem.swift */; };
+		F717F4FA259C089700D1508A /* UIView+MaskPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717F4F9259C089700D1508A /* UIView+MaskPath.swift */; };
+		F717F4FD259C08BC00D1508A /* UIViewController+TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717F4FC259C08BC00D1508A /* UIViewController+TabBarItem.swift */; };
+		F717F500259C1C7D00D1508A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717F4FF259C1C7D00D1508A /* ViewController.swift */; };
+		F717F504259C1D5300D1508A /* CGFloatListRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717F503259C1D5300D1508A /* CGFloatListRepresentable.swift */; };
+		F717F508259C1D7400D1508A /* CGGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717F507259C1D7400D1508A /* CGGeometry.swift */; };
+		F717F50B259C1D8600D1508A /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717F50A259C1D8600D1508A /* CGPoint.swift */; };
+		F717F50E259C1DA000D1508A /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717F50D259C1DA000D1508A /* CGRect.swift */; };
+		F717F511259C1DB200D1508A /* CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717F510259C1DB200D1508A /* CGSize.swift */; };
+		F717F514259C1DC600D1508A /* CGVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717F513259C1DC600D1508A /* CGVector.swift */; };
+		F717F517259C1DD700D1508A /* Comparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717F516259C1DD700D1508A /* Comparable.swift */; };
+		F717F51A259C1DE900D1508A /* FloatingPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717F519259C1DE900D1508A /* FloatingPoint.swift */; };
+		F717F51D259C1DFF00D1508A /* UIEdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717F51C259C1DFF00D1508A /* UIEdgeInsets.swift */; };
+		F717F520259C1E1900D1508A /* UIGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717F51F259C1E1900D1508A /* UIGeometry.swift */; };
+		F717F523259C1E2A00D1508A /* UIOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717F522259C1E2A00D1508A /* UIOffset.swift */; };
+		F717F527259C295700D1508A /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717F526259C295700D1508A /* History.swift */; };
+		F717F52A259C302A00D1508A /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717F529259C302A00D1508A /* HistoryTableViewCell.swift */; };
+		F71DB5AC25A0D15800F1186D /* UIColor_Hex_Swift in Frameworks */ = {isa = PBXBuildFile; productRef = F71DB5AB25A0D15800F1186D /* UIColor_Hex_Swift */; };
+		F792552825A161B600BBE546 /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = F792552725A161B600BBE546 /* TimeInterval.swift */; };
+		F792552B25A17BC400BBE546 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F792552A25A17BC400BBE546 /* TableViewCell.swift */; };
+		F792552F25A17CFC00BBE546 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F792552E25A17CFC00BBE546 /* UIView.swift */; };
+		F792554525A17F2900BBE546 /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F792553A25A17F2500BBE546 /* GoogleAppMeasurement.framework */; };
+		F792554625A17F2900BBE546 /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F792553B25A17F2500BBE546 /* nanopb.xcframework */; };
+		F792554725A17F2900BBE546 /* PromisesObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F792553C25A17F2500BBE546 /* PromisesObjC.xcframework */; };
+		F792554825A17F2900BBE546 /* GoogleMobileAds.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F792553D25A17F2800BBE546 /* GoogleMobileAds.xcframework */; };
+		F792554925A17F2900BBE546 /* UserMessagingPlatform.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F792553E25A17F2800BBE546 /* UserMessagingPlatform.xcframework */; };
+		F792554A25A17F2900BBE546 /* Promises-LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = F792554025A17F2800BBE546 /* Promises-LICENSE */; };
+		F792554B25A17F2900BBE546 /* NanoPB-LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = F792554125A17F2800BBE546 /* NanoPB-LICENSE */; };
+		F792554C25A17F2900BBE546 /* OpenMeasurement-LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = F792554225A17F2800BBE546 /* OpenMeasurement-LICENSE */; };
+		F792554D25A17F2900BBE546 /* GoogleUtilities-LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = F792554325A17F2800BBE546 /* GoogleUtilities-LICENSE */; };
+		F792554E25A17F2900BBE546 /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F792554425A17F2900BBE546 /* GoogleUtilities.xcframework */; };
+		F792555125A1854500BBE546 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = F792555025A1854500BBE546 /* Array.swift */; };
+		F792555425A1B7AC00BBE546 /* Numeric.swift in Sources */ = {isa = PBXBuildFile; fileRef = F792555325A1B7AC00BBE546 /* Numeric.swift */; };
+		F792555825A2065100BBE546 /* TranserfableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F792555725A2065100BBE546 /* TranserfableData.swift */; };
+		F792556125A2514900BBE546 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F792556025A2514900BBE546 /* UIColor.swift */; };
+		F7A63FDA259C6E4900939B95 /* DayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A63FD9259C6E4900939B95 /* DayTableViewCell.swift */; };
+		F7A63FDD259C6E5400939B95 /* AdTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A63FDC259C6E5400939B95 /* AdTableViewCell.swift */; };
+		F7A63FE3259C73BF00939B95 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A63FE2259C73BF00939B95 /* Date.swift */; };
+		F7A63FE6259C7FFE00939B95 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A63FE5259C7FFE00939B95 /* CardView.swift */; };
+		F7A63FEA259C888200939B95 /* ScalingCarousel in Frameworks */ = {isa = PBXBuildFile; productRef = F7A63FE9259C888200939B95 /* ScalingCarousel */; };
+		F7A63FEE259C890100939B95 /* GameModeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A63FED259C890100939B95 /* GameModeCollectionViewCell.swift */; };
+		F7A63FF4259C8BF200939B95 /* GradientsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A63FF3259C8BF200939B95 /* GradientsManager.swift */; };
+		F7A63FF8259C8D3300939B95 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A63FF7259C8D3300939B95 /* Game.swift */; };
+		F7A63FFB259C8D3A00939B95 /* Scores.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A63FFA259C8D3A00939B95 /* Scores.swift */; };
+		F7A63FFE259C8D5700939B95 /* GameList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A63FFD259C8D5700939B95 /* GameList.swift */; };
+		F7A6400D259C9F3800939B95 /* Gradients.json in Resources */ = {isa = PBXBuildFile; fileRef = F7A6400C259C9F3800939B95 /* Gradients.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0C2FE7DF222E133C0013F59F /* MultiMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiMenuVC.swift; sourceTree = "<group>"; };
-		0C2FE7E1222E16050013F59F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0C43745F1E743EFE0035B586 /* Pong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C4374621E743EFE0035B586 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C4374641E743EFE0035B586 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -36,8 +80,61 @@
 		0C4374721E743EFE0035B586 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C4374741E743EFE0035B586 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C43747A1E7441F90035B586 /* LLPIXEL3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LLPIXEL3.ttf; sourceTree = "<group>"; };
-		0C43747C1E7442020035B586 /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
-		F76642302230982700CD8009 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		F717F47A259ABCE000D1508A /* SinglePlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlayerViewController.swift; sourceTree = "<group>"; };
+		F717F47D259ABCEC00D1508A /* MultiplayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplayerViewController.swift; sourceTree = "<group>"; };
+		F717F4F0259C082F00D1508A /* FloatingTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTabBar.swift; sourceTree = "<group>"; };
+		F717F4F3259C086000D1508A /* FloatingTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTabBarController.swift; sourceTree = "<group>"; };
+		F717F4F6259C087C00D1508A /* FloatingTabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTabItem.swift; sourceTree = "<group>"; };
+		F717F4F9259C089700D1508A /* UIView+MaskPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+MaskPath.swift"; sourceTree = "<group>"; };
+		F717F4FC259C08BC00D1508A /* UIViewController+TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+TabBarItem.swift"; sourceTree = "<group>"; };
+		F717F4FF259C1C7D00D1508A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F717F503259C1D5300D1508A /* CGFloatListRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatListRepresentable.swift; sourceTree = "<group>"; };
+		F717F507259C1D7400D1508A /* CGGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGGeometry.swift; sourceTree = "<group>"; };
+		F717F50A259C1D8600D1508A /* CGPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPoint.swift; sourceTree = "<group>"; };
+		F717F50D259C1DA000D1508A /* CGRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
+		F717F510259C1DB200D1508A /* CGSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSize.swift; sourceTree = "<group>"; };
+		F717F513259C1DC600D1508A /* CGVector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGVector.swift; sourceTree = "<group>"; };
+		F717F516259C1DD700D1508A /* Comparable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comparable.swift; sourceTree = "<group>"; };
+		F717F519259C1DE900D1508A /* FloatingPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingPoint.swift; sourceTree = "<group>"; };
+		F717F51C259C1DFF00D1508A /* UIEdgeInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEdgeInsets.swift; sourceTree = "<group>"; };
+		F717F51F259C1E1900D1508A /* UIGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIGeometry.swift; sourceTree = "<group>"; };
+		F717F522259C1E2A00D1508A /* UIOffset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIOffset.swift; sourceTree = "<group>"; };
+		F717F526259C295700D1508A /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		F717F529259C302A00D1508A /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		F792552725A161B600BBE546 /* TimeInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeInterval.swift; sourceTree = "<group>"; };
+		F792552A25A17BC400BBE546 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		F792552E25A17CFC00BBE546 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		F792553225A17EAC00BBE546 /* GoogleUtilities.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleUtilities.xcframework; path = "../../Downloads/GoogleMobileAdsSdkiOS-7.69.0/GoogleUtilities.xcframework"; sourceTree = "<group>"; };
+		F792553325A17EAC00BBE546 /* GoogleMobileAds.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleMobileAds.xcframework; path = "../../Downloads/GoogleMobileAdsSdkiOS-7.69.0/GoogleMobileAds.xcframework"; sourceTree = "<group>"; };
+		F792553425A17EAC00BBE546 /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppMeasurement.framework; path = "../../Downloads/GoogleMobileAdsSdkiOS-7.69.0/GoogleAppMeasurement.framework"; sourceTree = "<group>"; };
+		F792553525A17EAC00BBE546 /* nanopb.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = nanopb.xcframework; path = "../../Downloads/GoogleMobileAdsSdkiOS-7.69.0/nanopb.xcframework"; sourceTree = "<group>"; };
+		F792553625A17EAC00BBE546 /* PromisesObjC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PromisesObjC.xcframework; path = "../../Downloads/GoogleMobileAdsSdkiOS-7.69.0/PromisesObjC.xcframework"; sourceTree = "<group>"; };
+		F792553725A17EAC00BBE546 /* UserMessagingPlatform.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = UserMessagingPlatform.xcframework; path = "../../Downloads/GoogleMobileAdsSdkiOS-7.69.0/UserMessagingPlatform.xcframework"; sourceTree = "<group>"; };
+		F792553825A17EAC00BBE546 /* Licenses */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Licenses; path = "../../Downloads/GoogleMobileAdsSdkiOS-7.69.0/Licenses"; sourceTree = "<group>"; };
+		F792553A25A17F2500BBE546 /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleAppMeasurement.framework; sourceTree = "<group>"; };
+		F792553B25A17F2500BBE546 /* nanopb.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = nanopb.xcframework; sourceTree = "<group>"; };
+		F792553C25A17F2500BBE546 /* PromisesObjC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PromisesObjC.xcframework; sourceTree = "<group>"; };
+		F792553D25A17F2800BBE546 /* GoogleMobileAds.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GoogleMobileAds.xcframework; sourceTree = "<group>"; };
+		F792553E25A17F2800BBE546 /* UserMessagingPlatform.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = UserMessagingPlatform.xcframework; sourceTree = "<group>"; };
+		F792554025A17F2800BBE546 /* Promises-LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Promises-LICENSE"; sourceTree = "<group>"; };
+		F792554125A17F2800BBE546 /* NanoPB-LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "NanoPB-LICENSE"; sourceTree = "<group>"; };
+		F792554225A17F2800BBE546 /* OpenMeasurement-LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "OpenMeasurement-LICENSE"; sourceTree = "<group>"; };
+		F792554325A17F2800BBE546 /* GoogleUtilities-LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "GoogleUtilities-LICENSE"; sourceTree = "<group>"; };
+		F792554425A17F2900BBE546 /* GoogleUtilities.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GoogleUtilities.xcframework; sourceTree = "<group>"; };
+		F792555025A1854500BBE546 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		F792555325A1B7AC00BBE546 /* Numeric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numeric.swift; sourceTree = "<group>"; };
+		F792555725A2065100BBE546 /* TranserfableData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranserfableData.swift; sourceTree = "<group>"; };
+		F792556025A2514900BBE546 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		F7A63FD9259C6E4900939B95 /* DayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTableViewCell.swift; sourceTree = "<group>"; };
+		F7A63FDC259C6E5400939B95 /* AdTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdTableViewCell.swift; sourceTree = "<group>"; };
+		F7A63FE2259C73BF00939B95 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		F7A63FE5259C7FFE00939B95 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		F7A63FED259C890100939B95 /* GameModeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeCollectionViewCell.swift; sourceTree = "<group>"; };
+		F7A63FF3259C8BF200939B95 /* GradientsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientsManager.swift; sourceTree = "<group>"; };
+		F7A63FF7259C8D3300939B95 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		F7A63FFA259C8D3A00939B95 /* Scores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scores.swift; sourceTree = "<group>"; };
+		F7A63FFD259C8D5700939B95 /* GameList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameList.swift; sourceTree = "<group>"; };
+		F7A6400C259C9F3800939B95 /* Gradients.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Gradients.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +142,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F71DB5AC25A0D15800F1186D /* UIColor_Hex_Swift in Frameworks */,
+				F792554925A17F2900BBE546 /* UserMessagingPlatform.xcframework in Frameworks */,
+				F792554825A17F2900BBE546 /* GoogleMobileAds.xcframework in Frameworks */,
+				F792554E25A17F2900BBE546 /* GoogleUtilities.xcframework in Frameworks */,
+				F7A63FEA259C888200939B95 /* ScalingCarousel in Frameworks */,
+				F792554525A17F2900BBE546 /* GoogleAppMeasurement.framework in Frameworks */,
+				F792554625A17F2900BBE546 /* nanopb.xcframework in Frameworks */,
+				F792554725A17F2900BBE546 /* PromisesObjC.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +161,7 @@
 			children = (
 				0C4374611E743EFE0035B586 /* Pong */,
 				0C4374601E743EFE0035B586 /* Products */,
+				F792553125A17EAC00BBE546 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,22 +176,184 @@
 		0C4374611E743EFE0035B586 /* Pong */ = {
 			isa = PBXGroup;
 			children = (
-				0C43747C1E7442020035B586 /* MenuVC.swift */,
-				0C43747A1E7441F90035B586 /* LLPIXEL3.ttf */,
+				F792553925A17F0000BBE546 /* Google Ad Mob Frameworks */,
+				F7A63FE1259C723C00939B95 /* Extensions */,
+				F7A63FD4259C65EC00939B95 /* Resources */,
+				F717F472259AB73400D1508A /* GameLogic */,
+				F7A63FDF259C6E5A00939B95 /* Cells */,
+				F717F471259AB71100D1508A /* ViewControllers */,
 				0C4374621E743EFE0035B586 /* AppDelegate.swift */,
-				0C4374641E743EFE0035B586 /* GameScene.sks */,
-				0C4374661E743EFE0035B586 /* Actions.sks */,
-				0C4374681E743EFE0035B586 /* GameScene.swift */,
-				0C43746A1E743EFE0035B586 /* GameViewController.swift */,
 				0C43746C1E743EFE0035B586 /* Main.storyboard */,
 				0C43746F1E743EFE0035B586 /* Assets.xcassets */,
 				0C4374711E743EFE0035B586 /* LaunchScreen.storyboard */,
 				0C4374741E743EFE0035B586 /* Info.plist */,
-				0C2FE7DF222E133C0013F59F /* MultiMenuVC.swift */,
-				0C2FE7E1222E16050013F59F /* MainViewController.swift */,
-				F76642302230982700CD8009 /* LoadingView.swift */,
 			);
 			path = Pong;
+			sourceTree = "<group>";
+		};
+		F717F471259AB71100D1508A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0C43746A1E743EFE0035B586 /* GameViewController.swift */,
+				F717F47A259ABCE000D1508A /* SinglePlayerViewController.swift */,
+				F717F47D259ABCEC00D1508A /* MultiplayerViewController.swift */,
+				F717F4FF259C1C7D00D1508A /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F717F472259AB73400D1508A /* GameLogic */ = {
+			isa = PBXGroup;
+			children = (
+				F7A63FF6259C8D2300939B95 /* Records */,
+				0C4374681E743EFE0035B586 /* GameScene.swift */,
+				0C4374641E743EFE0035B586 /* GameScene.sks */,
+				0C4374661E743EFE0035B586 /* Actions.sks */,
+				F792555725A2065100BBE546 /* TranserfableData.swift */,
+			);
+			path = GameLogic;
+			sourceTree = "<group>";
+		};
+		F717F473259AB74600D1508A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0C43747A1E7441F90035B586 /* LLPIXEL3.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F717F4EF259C081800D1508A /* FloatingTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				F717F4F0259C082F00D1508A /* FloatingTabBar.swift */,
+				F717F4F3259C086000D1508A /* FloatingTabBarController.swift */,
+				F717F4F6259C087C00D1508A /* FloatingTabItem.swift */,
+				F717F4F9259C089700D1508A /* UIView+MaskPath.swift */,
+				F717F4FC259C08BC00D1508A /* UIViewController+TabBarItem.swift */,
+			);
+			path = FloatingTabBar;
+			sourceTree = "<group>";
+		};
+		F717F502259C1D3400D1508A /* CGMath */ = {
+			isa = PBXGroup;
+			children = (
+				F717F503259C1D5300D1508A /* CGFloatListRepresentable.swift */,
+				F717F507259C1D7400D1508A /* CGGeometry.swift */,
+				F717F50A259C1D8600D1508A /* CGPoint.swift */,
+				F717F50D259C1DA000D1508A /* CGRect.swift */,
+				F717F510259C1DB200D1508A /* CGSize.swift */,
+				F717F513259C1DC600D1508A /* CGVector.swift */,
+				F717F516259C1DD700D1508A /* Comparable.swift */,
+				F717F519259C1DE900D1508A /* FloatingPoint.swift */,
+				F717F51C259C1DFF00D1508A /* UIEdgeInsets.swift */,
+				F717F51F259C1E1900D1508A /* UIGeometry.swift */,
+				F717F522259C1E2A00D1508A /* UIOffset.swift */,
+			);
+			path = CGMath;
+			sourceTree = "<group>";
+		};
+		F792553125A17EAC00BBE546 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F792553425A17EAC00BBE546 /* GoogleAppMeasurement.framework */,
+				F792553325A17EAC00BBE546 /* GoogleMobileAds.xcframework */,
+				F792553225A17EAC00BBE546 /* GoogleUtilities.xcframework */,
+				F792553825A17EAC00BBE546 /* Licenses */,
+				F792553525A17EAC00BBE546 /* nanopb.xcframework */,
+				F792553625A17EAC00BBE546 /* PromisesObjC.xcframework */,
+				F792553725A17EAC00BBE546 /* UserMessagingPlatform.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F792553925A17F0000BBE546 /* Google Ad Mob Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F792553A25A17F2500BBE546 /* GoogleAppMeasurement.framework */,
+				F792553D25A17F2800BBE546 /* GoogleMobileAds.xcframework */,
+				F792554425A17F2900BBE546 /* GoogleUtilities.xcframework */,
+				F792553F25A17F2800BBE546 /* Licenses */,
+				F792553B25A17F2500BBE546 /* nanopb.xcframework */,
+				F792553C25A17F2500BBE546 /* PromisesObjC.xcframework */,
+				F792553E25A17F2800BBE546 /* UserMessagingPlatform.xcframework */,
+			);
+			path = "Google Ad Mob Frameworks";
+			sourceTree = "<group>";
+		};
+		F792553F25A17F2800BBE546 /* Licenses */ = {
+			isa = PBXGroup;
+			children = (
+				F792554025A17F2800BBE546 /* Promises-LICENSE */,
+				F792554125A17F2800BBE546 /* NanoPB-LICENSE */,
+				F792554225A17F2800BBE546 /* OpenMeasurement-LICENSE */,
+				F792554325A17F2800BBE546 /* GoogleUtilities-LICENSE */,
+			);
+			path = Licenses;
+			sourceTree = "<group>";
+		};
+		F7A63FD4259C65EC00939B95 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F7A6400C259C9F3800939B95 /* Gradients.json */,
+				F717F473259AB74600D1508A /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F7A63FDF259C6E5A00939B95 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F7A63FF0259C890500939B95 /* UICollectionView */,
+				F7A63FEC259C88DB00939B95 /* UITableView */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F7A63FE1259C723C00939B95 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F717F502259C1D3400D1508A /* CGMath */,
+				F717F4EF259C081800D1508A /* FloatingTabBar */,
+				F7A63FE2259C73BF00939B95 /* Date.swift */,
+				F7A63FE5259C7FFE00939B95 /* CardView.swift */,
+				F7A63FF3259C8BF200939B95 /* GradientsManager.swift */,
+				F792552725A161B600BBE546 /* TimeInterval.swift */,
+				F792552E25A17CFC00BBE546 /* UIView.swift */,
+				F792555025A1854500BBE546 /* Array.swift */,
+				F792555325A1B7AC00BBE546 /* Numeric.swift */,
+				F792556025A2514900BBE546 /* UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F7A63FEC259C88DB00939B95 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				F717F529259C302A00D1508A /* HistoryTableViewCell.swift */,
+				F7A63FD9259C6E4900939B95 /* DayTableViewCell.swift */,
+				F7A63FDC259C6E5400939B95 /* AdTableViewCell.swift */,
+				F792552A25A17BC400BBE546 /* TableViewCell.swift */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		F7A63FF0259C890500939B95 /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				F7A63FED259C890100939B95 /* GameModeCollectionViewCell.swift */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		F7A63FF6259C8D2300939B95 /* Records */ = {
+			isa = PBXGroup;
+			children = (
+				F7A63FF7259C8D3300939B95 /* Game.swift */,
+				F7A63FFA259C8D3A00939B95 /* Scores.swift */,
+				F7A63FFD259C8D5700939B95 /* GameList.swift */,
+				F717F526259C295700D1508A /* History.swift */,
+			);
+			path = Records;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,6 +372,10 @@
 			dependencies = (
 			);
 			name = Pong;
+			packageProductDependencies = (
+				F7A63FE9259C888200939B95 /* ScalingCarousel */,
+				F71DB5AB25A0D15800F1186D /* UIColor_Hex_Swift */,
+			);
 			productName = Pong;
 			productReference = 0C43745F1E743EFE0035B586 /* Pong.app */;
 			productType = "com.apple.product-type.application";
@@ -115,26 +387,30 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = BurcuMirza;
 				TargetAttributes = {
 					0C43745E1E743EFE0035B586 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = QXNMG5R4EQ;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1220;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = 0C43745A1E743EFD0035B586 /* Build configuration list for PBXProject "Pong" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
 			mainGroup = 0C4374561E743EFD0035B586;
+			packageReferences = (
+				F7A63FE8259C888200939B95 /* XCRemoteSwiftPackageReference "ScalingCarousel" */,
+				F71DB5AA25A0D15800F1186D /* XCRemoteSwiftPackageReference "UIColor-Hex-Swift" */,
+			);
 			productRefGroup = 0C4374601E743EFE0035B586 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -151,7 +427,12 @@
 			files = (
 				0C43746E1E743EFE0035B586 /* Main.storyboard in Resources */,
 				0C43747B1E7441F90035B586 /* LLPIXEL3.ttf in Resources */,
+				F792554A25A17F2900BBE546 /* Promises-LICENSE in Resources */,
 				0C4374651E743EFE0035B586 /* GameScene.sks in Resources */,
+				F792554B25A17F2900BBE546 /* NanoPB-LICENSE in Resources */,
+				F792554D25A17F2900BBE546 /* GoogleUtilities-LICENSE in Resources */,
+				F792554C25A17F2900BBE546 /* OpenMeasurement-LICENSE in Resources */,
+				F7A6400D259C9F3800939B95 /* Gradients.json in Resources */,
 				0C4374701E743EFE0035B586 /* Assets.xcassets in Resources */,
 				0C4374731E743EFE0035B586 /* LaunchScreen.storyboard in Resources */,
 				0C4374671E743EFE0035B586 /* Actions.sks in Resources */,
@@ -165,13 +446,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F717F4F7259C087C00D1508A /* FloatingTabItem.swift in Sources */,
+				F717F4FD259C08BC00D1508A /* UIViewController+TabBarItem.swift in Sources */,
 				0C4374691E743EFE0035B586 /* GameScene.swift in Sources */,
-				0C43747D1E7442020035B586 /* MenuVC.swift in Sources */,
+				F792552825A161B600BBE546 /* TimeInterval.swift in Sources */,
+				F792555825A2065100BBE546 /* TranserfableData.swift in Sources */,
+				F717F4F4259C086000D1508A /* FloatingTabBarController.swift in Sources */,
+				F717F47E259ABCEC00D1508A /* MultiplayerViewController.swift in Sources */,
+				F717F4FA259C089700D1508A /* UIView+MaskPath.swift in Sources */,
+				F717F500259C1C7D00D1508A /* ViewController.swift in Sources */,
+				F7A63FEE259C890100939B95 /* GameModeCollectionViewCell.swift in Sources */,
 				0C43746B1E743EFE0035B586 /* GameViewController.swift in Sources */,
-				0C2FE7E2222E16050013F59F /* MainViewController.swift in Sources */,
+				F792555425A1B7AC00BBE546 /* Numeric.swift in Sources */,
+				F792552B25A17BC400BBE546 /* TableViewCell.swift in Sources */,
+				F7A63FF4259C8BF200939B95 /* GradientsManager.swift in Sources */,
 				0C4374631E743EFE0035B586 /* AppDelegate.swift in Sources */,
-				F76642312230982800CD8009 /* LoadingView.swift in Sources */,
-				0C2FE7E0222E133C0013F59F /* MultiMenuVC.swift in Sources */,
+				F717F47B259ABCE000D1508A /* SinglePlayerViewController.swift in Sources */,
+				F717F50B259C1D8600D1508A /* CGPoint.swift in Sources */,
+				F717F517259C1DD700D1508A /* Comparable.swift in Sources */,
+				F792552F25A17CFC00BBE546 /* UIView.swift in Sources */,
+				F7A63FDA259C6E4900939B95 /* DayTableViewCell.swift in Sources */,
+				F717F514259C1DC600D1508A /* CGVector.swift in Sources */,
+				F792555125A1854500BBE546 /* Array.swift in Sources */,
+				F7A63FE6259C7FFE00939B95 /* CardView.swift in Sources */,
+				F717F527259C295700D1508A /* History.swift in Sources */,
+				F717F4F1259C082F00D1508A /* FloatingTabBar.swift in Sources */,
+				F7A63FFE259C8D5700939B95 /* GameList.swift in Sources */,
+				F717F504259C1D5300D1508A /* CGFloatListRepresentable.swift in Sources */,
+				F717F50E259C1DA000D1508A /* CGRect.swift in Sources */,
+				F717F51A259C1DE900D1508A /* FloatingPoint.swift in Sources */,
+				F792556125A2514900BBE546 /* UIColor.swift in Sources */,
+				F7A63FFB259C8D3A00939B95 /* Scores.swift in Sources */,
+				F7A63FF8259C8D3300939B95 /* Game.swift in Sources */,
+				F717F52A259C302A00D1508A /* HistoryTableViewCell.swift in Sources */,
+				F717F511259C1DB200D1508A /* CGSize.swift in Sources */,
+				F717F51D259C1DFF00D1508A /* UIEdgeInsets.swift in Sources */,
+				F7A63FDD259C6E5400939B95 /* AdTableViewCell.swift in Sources */,
+				F717F508259C1D7400D1508A /* CGGeometry.swift in Sources */,
+				F717F523259C1E2A00D1508A /* UIOffset.swift in Sources */,
+				F7A63FE3259C73BF00939B95 /* Date.swift in Sources */,
+				F717F520259C1E1900D1508A /* UIGeometry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +515,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -221,6 +536,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -245,7 +561,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -258,6 +574,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -278,6 +595,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -296,10 +614,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -309,12 +628,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QXNMG5R4EQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pong/Google\\ Ad\\ Mob\\ Frameworks",
+				);
 				INFOPLIST_FILE = Pong/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = BurcuMirza.Pong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -323,12 +652,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QXNMG5R4EQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pong/Google\\ Ad\\ Mob\\ Frameworks",
+				);
 				INFOPLIST_FILE = Pong/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = BurcuMirza.Pong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -354,6 +693,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F71DB5AA25A0D15800F1186D /* XCRemoteSwiftPackageReference "UIColor-Hex-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yeahdongcn/UIColor-Hex-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+		F7A63FE8259C888200939B95 /* XCRemoteSwiftPackageReference "ScalingCarousel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/superpeteblaze/ScalingCarousel.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F71DB5AB25A0D15800F1186D /* UIColor_Hex_Swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F71DB5AA25A0D15800F1186D /* XCRemoteSwiftPackageReference "UIColor-Hex-Swift" */;
+			productName = UIColor_Hex_Swift;
+		};
+		F7A63FE9259C888200939B95 /* ScalingCarousel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7A63FE8259C888200939B95 /* XCRemoteSwiftPackageReference "ScalingCarousel" */;
+			productName = ScalingCarousel;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0C4374571E743EFD0035B586 /* Project object */;
 }
