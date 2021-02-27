@@ -15,6 +15,12 @@ class ViewController: FloatingTabBarController {
 
         // Do any additional setup after loading the view.
         
+        let game = storyboard!.instantiateViewController(withIdentifier: "gameVC") as! GameViewController
+        game.floatingTabItem = FloatingTabItem(
+            selectedImage: UIImage(systemName: "play.fill")!,
+            normalImage: UIImage(systemName: "play")!
+        )
+        
         let navSingle = storyboard!.instantiateViewController(withIdentifier: "navSingle") as! UINavigationController
         navSingle.floatingTabItem = FloatingTabItem(
             selectedImage: UIImage(systemName: "person.fill")!,
@@ -27,12 +33,6 @@ class ViewController: FloatingTabBarController {
             normalImage: UIImage(systemName: "person.2")!
         )
         
-        let game = storyboard!.instantiateViewController(withIdentifier: "gameVC") as! GameViewController
-        game.floatingTabItem = FloatingTabItem(
-            selectedImage: UIImage(systemName: "play.fill")!,
-            normalImage: UIImage(systemName: "play")!
-        )
-        
-        viewControllers = [navSingle, navMulti, game]
+        viewControllers = [game, navSingle, navMulti]
     }
 }
