@@ -1,5 +1,5 @@
 # Awesome Pong Game
-![App Icon](https://github.com/Aries-Sciences-LLC/Website/blob/master/images/appicons/pong.png)
+![App Icon](https://github.com/Aries-Sciences-LLC/Pong/blob/master/iOS%20icons%20(App%20Icon)/App%20Icon.png)
 
 Wanna enjoy one of the retros? The originals? A member of the founding fathers of arcade games: Pong?
 
